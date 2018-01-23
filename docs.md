@@ -24,3 +24,14 @@ Deliverables:
 * (Optional) Enhance existing content.
 
 **Mentors**: [Maira Wenzel](https://github.com/mairaw), [Bill Wagner](https://github.com/BillWagner), [Rick Anderson](https://github.com/Rick-Anderson)
+
+## Implement Programmatic API for Documentation Repo
+
+**Complexity:** Medium
+
+`mdoc` is used to scan .NET and UWP assemblies and create a repository of EcmaXML which can be source controlled. This repository is then used as the source to publish documentation to end users (via web and otherwise). Many engineering teams write scripts that read this source in order to create statistics and analysis of their APIs, or even automatically document their library based on business heuristics. This task would build a programmatic interface to create, update, and query these repositories; all of these scenarios and others would benefit from the presence of this API. 
+
+Deliverables:
+An API that lets you create, read, and update an EcmaXML repository. Updates will use a batching system, so you can collect changes to a file and write all at once. Querying would be implemented with a custom IQueryable provider, so that you can easily search repositories with LINQ without running out of memory. Additionally, Unit tests will be required.
+
+**Mentors:** Joel Martinez
