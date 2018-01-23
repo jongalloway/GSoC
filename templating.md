@@ -1,5 +1,6 @@
 ## Define and author new templates
 **Complexity:** Low
+
 Dotnet/templating templates provide the ability to quickly generate customized "boilerplate" code. Templates lay the foundation for performing specific common programming tasks, allowing programmers to quickly get started on the functional aspects of their applications by providing code to deal with standard use cases on top of existing generic API's. For template authoring, this could be simply writing common-use high level wrappers around an existing library which only implements low level functionality, or as complex as creating new functionalty from scratch. Some possible template ideas include: high-level API's to interact with map services, search engines, or social media platforms; students are also encouraged to propose templates based on their areas of interest.
 
 **Deliverables:**
@@ -12,6 +13,7 @@ Dotnet/templating templates provide the ability to quickly generate customized "
 
 ## Authoring tools for dotnet/templating
 **Complexity:** Medium
+
 There is currently very little feedback to template authors regarding what occurs internally during template processing. This makes it difficult for template authors to troubleshoot problems when creating or updating templates. Optionally providing details of how a template gets processed will make for a much easier template author debugging experience.
 
 **Deliverables:**
@@ -24,6 +26,7 @@ There is currently very little feedback to template authors regarding what occur
 
 ## Template primary output configuration version 2
 **Complexity:** Medium
+
 Template authors may define ceration template files as "primary outputs". This information may be referenced by author defined template post actions which allow template authors to specify steps to occur after template invocation finishes, for example opening a template-related file in a browser or editor. Currently the post-action configuration references the primary outputs by a numeric index, but the indexes of the primary outputs are not constant since each defined primary output may be conditionally included or excluded; this makes it difficult & unintuitive to refer to the outputs in post action configuration. A better design for primary output configuration would allow referencing the outputs by author defined names as opposed to positional indexes, making the post action configuration must more intuitive. More details available here: https://github.com/dotnet/templating/issues/1258
 
 **Deliverables:**
@@ -36,8 +39,11 @@ Template authors may define ceration template files as "primary outputs". This i
 
 ## Implement output variables
 **Complexity:** Medium
-Template engine hosts currently receive very little information from the template engine regarding template instantiation. Authors would like to define symbols in templates, and have the template creation process report on whether the symbol was emitted, and if so, in what file(s) and at what position in those file(s). 
+
+Template engine hosts currently receive very little information from the template engine regarding template instantiation. Authors would like to define symbols in templates, and have the template creation process report on whether the symbol was emitted, and if so, in what file(s) and at what position in those file(s).
+ 
 Motivating issue: https://github.com/dotnet/templating/issues/1249
+
 Existing preliminary work: https://github.com/dotnet/templating/pull/1385/files
 
 **Deliverables:**
@@ -50,6 +56,7 @@ Existing preliminary work: https://github.com/dotnet/templating/pull/1385/files
 
 ## Improvements to template and component installation
 **Complexity:** Difficult
+
 Installation of templates and components currently encounters some difficulty in reporting on exactly what was installed, and also in identifying some unsupported scenarios which sometimes result in corrupted configuration. Improving the install experience will be of great benefit to tempalte authors, providing feedback on template packaging problems which could otherwise go unnoticed in certain cases.
 
 **Deliverables:**
