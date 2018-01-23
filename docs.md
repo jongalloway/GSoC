@@ -12,7 +12,7 @@ The .NET and ASP.NET docs team is responsible for a vast set of articles, tutori
 * ASP.NET Core
 * ASP.NET
 
-The main goal of this project is to create new interactive lessons for users to learn how to program in C# using our new .NET REPL. These lessons will take the students through a series of steps and build code for a specific C# topic. First, the lessons are all web-based and then they move on to show the students how to build that code on their own machines. To see existing lessons, visit aka.ms/csharp-quickstarts.
+The main goal of this project is to create new interactive lessons for users to learn how to program in C# using our new .NET REPL (Read Evaluate Print Loop). These lessons will take the students through a series of steps and build code for a specific C# topic. First, the lessons are all web-based and then they move on to show the students how to build that code on their own machines. To see existing lessons, visit aka.ms/csharp-quickstarts.
 
 You could also pick and choose from our backlog, tasks that would appeal most to your skills and interests. It can be more heavily focused on content, code or both.
 
